@@ -4,6 +4,24 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+class Doc extends React.Component{
+  componentDidMount(){
+    document.title = "KiranSrinivas | Portfolio"
+  }
+
+  render(){
+    return(
+      <b> test </b>
+    )
+  }
+}
+
+ReactDOM.render(
+  <Doc />,
+  document.getElementById('root')
+);
+
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
